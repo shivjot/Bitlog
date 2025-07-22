@@ -1,0 +1,36 @@
+
+body {
+  background-color: #0f0f0f;
+  color: #33ff33;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+textarea, input {
+  background-color: #1a1a1a;
+  color: #33ff33;
+  border: 1px solid #333;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+button {
+  background-color: #000;
+  color: #33ff33;
+  border: 1px solid #33ff33;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+}
+.row input {
+  flex: 1;
+}

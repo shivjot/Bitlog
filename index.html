@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f0f0f" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Hacker P2P Chat</title>
+</head>
+<body>
+  <div class="container">
+    <h2>💀 Hacker Chat 💀</h2>
+    <textarea id="chatLog" readonly placeholder="💬 Chat log..."></textarea>
+    <div class="row">
+      <input id="messageInput" placeholder="💭 Type a message" />
+      <button id="sendButton">Send</button>
+    </div>
+    <div class="buttons">
+      <button id="createOfferBtn">🧪 Create Offer</button>
+      <button id="acceptOfferBtn">📥 Accept Offer</button>
+      <button id="acceptAnswerBtn">✅ Accept Answer</button>
+    </div>
+    <textarea id="jsonBox" placeholder="📦 Paste/copy offer/answer JSON here"></textarea>
+  </div>
+  <script src="p2p-chat.js"></script>
+  <script>
+    document.getElementById("messageInput").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        document.getElementById("sendButton").click();
+      }
+    });
+  </script>
+</body>
+</html>
