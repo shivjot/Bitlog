@@ -1,7 +1,7 @@
 
 {
   "name": "Hacker P2P Chat",
-  "short_name": "HackerChat",
+  "short_name": "AnonymousChat",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#0f0f0f",
